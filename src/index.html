@@ -5,14 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glot</title>
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/stylemin.css">
 </head>
 <body>
-    <h1>hello</h1>
-    <h2>world</h2>
-    <h3>My</h3>
-    <h4>name</h4>
-
-    <div>andrew</div>
+    <section class="promo">
+        <div class="container">
+            <header class="header">
+                <a href="#" class="header__logo">
+                    <img src="icons/logo.png" alt="logo">
+                </a>
+                <nav>
+                    <ul class="header__menu">
+                        <li class="header__item">
+                            <a href="#" class="header__item-links">Преимущества</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__item-links">Наша работа</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__item-links">Цены</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__item-links">Схема работы</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__item-links">Отзывы</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__item-links">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__contact">
+                    <!-- посмотреть нужно ли для этого раздела использовать БЭМ -->
+                    <div class="ask">
+                        Есть вопросы?
+                    </div>
+                    <a href="tel:+79264230100" class="header__number">+7 (926) 423 01 00</a>
+                </div>
+                <button class="header__btn">
+                    Перезвоните мне
+                </button>
+            </header>
+        </div>
+    </section>
 </body>
 </html>

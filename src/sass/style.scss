@@ -1,6 +1,9 @@
+@import "../sass/base/variables";
+
 * {
     font-family: 'Roboto', sans-serif;
 }
-h1 {
-    font-weight: 300;
-}
+
+@import "../sass/blocks/header";
+@import "../sass/blocks/promo";
+@import "../sass/blocks/buttons";

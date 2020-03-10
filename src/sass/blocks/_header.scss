@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__menu {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        list-style-type: none;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    &__item {
+        border-right: 1px dotted;
+        padding: 0 14px;
+        color: rgba($color: #fff, $alpha: 0.4);
+        &:last-child {
+            border-right: none;
+        } 
+        &-links {
+            color: #fff;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .ask {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+    }
+    &__number {
+        color: #ffffff;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+}
