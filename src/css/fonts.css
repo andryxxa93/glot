@@ -40,10 +40,20 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('RobotoCondensed-Regular.eot');
-    src: url('RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
-    url('RobotoCondensed-Regular.woff') format('woff'),
-    url('RobotoCondensed-Regular.ttf') format('truetype');
+    src: url('../fonts/RobotoCondensed-Bold.eot');
+    src: url('../fonts/RobotoCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/RobotoCondensed-Bold.woff') format('woff'),
+    url('../fonts/RobotoCondensed-Bold.ttf') format('truetype');
     font-weight: 900;
+    font-style: normal;
+    }
+    
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/RobotoCondensed-Regular.eot');
+    src: url('../fonts/RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/RobotoCondensed-Regular.woff') format('woff'),
+    url('../fonts/RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight: 800;
     font-style: normal;
     }

@@ -2,4 +2,33 @@
     padding: 23px 0 82px 0;
     min-height: 680px;
     background: url('../img/promo_bg.jpg') center (center/cover) no-repeat;
+
+    &__global {
+        font-size: 24px;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 9px;
+    }
+    &__header {
+        font-size: 72px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $main-color;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 26px;
+        line-height: 1.2;
+    }
+    &__subheader {
+        font-size: 42px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 9px;
+        line-height: 1.2;
+    }
 }
