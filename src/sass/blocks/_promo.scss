@@ -46,7 +46,7 @@
             width: 10px;
             height: 10px;
             background-color:#fff;
-            border-radius: 10px;
+            border-radius: 6px;
             margin: 0 13px;
         }
     }
@@ -54,5 +54,24 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    &__items {
+        max-width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+        margin-top: 27px;
+        // img {
+        //     height: 64px;
+        // }
+    }
+    &__dscr {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+        text-align: center;
+        margin-top: 13px;
     }
 }

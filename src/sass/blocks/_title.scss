@@ -1,0 +1,14 @@
+.title {
+    font-size: 26px;
+    line-height: 23px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2e2e2e;
+    text-align: center;
+    &__adv {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 500;
+        color: $main-color;
+    }
+}
