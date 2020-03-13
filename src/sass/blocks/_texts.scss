@@ -1,0 +1,10 @@
+.text {
+    font-size: 14px;
+    font-weight: 300;
+    color: #3a3a3a;
+    &__center {
+        display: block;
+        text-align: justify;
+        text-align-last: center;
+    }
+}

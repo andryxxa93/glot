@@ -11,4 +11,19 @@
         font-weight: 500;
         color: $main-color;
     }
+    &__work {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 700;
+        color: $main-color;
+        margin-top: 28px;
+        margin-bottom: 14px;
+    }
+}
+.subtitle {
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #2e2e2e;
+    text-align: center;
 }

@@ -1,0 +1,21 @@
+.work {
+    padding: 51px 0 57px 0;
+    min-height: 495px;
+    hr {
+        width: 148px;
+        background-color: $main-color;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 17px;
+    }
+    &__block {
+        margin-top: 37px;
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
