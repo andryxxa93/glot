@@ -5,6 +5,16 @@
 
     &__block  {
         display: flex;
-        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    &__round {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 102px;
+        height: 102px;
+        border: 1.0px solid #ffffff;
+        border-radius: 100%;
     }
 }

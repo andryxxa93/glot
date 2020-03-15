@@ -12,10 +12,16 @@
         display: block;
         width: 230px;
         height: 57px;
-        background-color: $main-color;
         margin: 0 auto;
         margin-top: 36px;
         font-size: 15px;
         font-weight: 500;
+    }
+    &_small {
+        position: absolute;
+        top: 225px;
+        &:hover {
+            background-color: #dc5238;
+        }
     }
 }
