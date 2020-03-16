@@ -24,4 +24,12 @@
             background-color: #dc5238;
         }
     }
+    &_border {
+        width: 180px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 63px;
+        box-shadow: 0 0 0 16px #fff;
+    }
 }

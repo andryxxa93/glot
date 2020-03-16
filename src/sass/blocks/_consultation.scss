@@ -1,0 +1,28 @@
+.consultation {
+    position: relative;
+    min-height: 400px;
+    padding: 56px 0 80px 0;
+    &__frame {
+        width: 1140px;
+        height: 166px;
+        margin: 0 auto;
+        border: 1px solid #898989;
+        border-color: rgba($color: #898989, $alpha: .5);
+        margin-top: 71px;
+    }
+    &__round {
+        background-color: #fff;
+        position: absolute;
+        left: 50%;
+        top: 100px;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 102px;
+        height: 102px;
+        border: 1.0px solid $main-color;
+        border-radius: 100%;
+        box-shadow: 0 0 0 16px #fff;
+    }
+}
