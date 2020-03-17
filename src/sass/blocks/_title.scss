@@ -27,8 +27,9 @@
         font-family: Roboto;
         font-size: 28px;
         line-height: 23px;
-        font-weight: 400;
+        font-weight: 500;
         color: #3a3a3a;
+        text-transform: none;
     }
 }
 .subtitle {
@@ -40,7 +41,8 @@
     text-align: center;
     
     &__white {
-        margin-top: 22px;
+        padding: 0;
+        margin-top: 18px;
         font-size: 19px;
         font-weight: 300;
         color: #ffffff;
