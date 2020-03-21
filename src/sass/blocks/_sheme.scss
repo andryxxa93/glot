@@ -1,5 +1,44 @@
 .scheme {
-    width: 1919px;
-    height: 454px;
+    padding: 51px 0 46px 0;
+    min-height: 454px;
     background-color: #f3f3f3;
+    &__wrapper {
+        margin-top: 29px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__items {
+        width: 256px;
+        min-height: 114px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+        &:last-child {
+            margin-top: 19px;
+        }
+    }
+    &__dscr {
+        font-size: 14px;
+        font-weight: 300;
+        color: #3a3a3a;
+        text-align: center;
+    }
+    &__icon {
+        display: block;
+        margin-bottom: 14px;
+    }
+    &__bottom {
+        padding: 26px 115px 0 110px;
+        display: flex;
+        justify-content: space-around;
+        &-items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 260px;
+        }
+    }
 }
