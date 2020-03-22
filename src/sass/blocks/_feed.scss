@@ -1,0 +1,25 @@
+.feed {
+    min-height: 470px;
+    padding: 51px 0 65px 0;
+    &__slider {
+        margin: 0 auto;
+        .slide {
+            width: 601px;
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 700;
+        color: #3a3a3a;
+        text-align: center;
+    }
+    &__dscr {
+        font-size: 14.1px;
+        font-weight: 300;
+        text-align: center;
+    }
+}
