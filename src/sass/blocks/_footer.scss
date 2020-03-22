@@ -1,0 +1,11 @@
+.footer {
+    &__info {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: row;
+        padding: 24px 0 28px 0;
+        height: 201px;
+        background-color: #25333c;
+    }
+}

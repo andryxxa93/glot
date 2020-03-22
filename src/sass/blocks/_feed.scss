@@ -1,25 +1,42 @@
 .feed {
     min-height: 470px;
     padding: 51px 0 65px 0;
-    &__slider {
-        margin: 0 auto;
-        .slide {
-            width: 601px;
-            img {
-                margin: 0 auto;
-            }
-        }
-    }
     &__title {
         font-size: 18px;
         line-height: 22px;
         font-weight: 700;
         color: #3a3a3a;
         text-align: center;
+        margin: 19px 0 16px 0;
     }
-    &__dscr {
-        font-size: 14.1px;
-        font-weight: 300;
-        text-align: center;
+    &__slider {
+        position: relative;
+        width: 601px;
+        margin: 0 auto;
+        margin-top: 31px;
+        div {
+            img {
+                width: 114px;
+                height: 114px;
+                margin: 0 auto;
+            }
+        }
+        .slick-prev, .slick-next {
+            position: absolute;
+            top: 12%;
+            left: 170px;
+            border: none;
+            background-color:rgba($color: #fff, $alpha: 0);
+            z-index: 1;
+            img {
+                border-style: none;
+                width: 14px;
+                height: 46px;
+            }
+        }
+        .slick-next {
+            right: 170px;
+            left: auto;
+        }
     }
 }
