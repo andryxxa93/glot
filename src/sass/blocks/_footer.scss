@@ -1,11 +1,51 @@
 .footer {
     &__info {
-        display: flex;
-        align-items: baseline;
-        justify-content: center;
-        flex-direction: row;
         padding: 24px 0 28px 0;
-        height: 201px;
         background-color: #25333c;
+        min-height: 201px;
+    }
+    &__title {
+        margin-left: 20px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+    &__head {
+        width: 1171px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    hr {
+        width: 1171px;
+        opacity: 0.3;
+        background-color: #fff;
+    }
+    &__bottom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__politics {
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 300;
+        text-decoration: underline;
+        color: #ec644b;
+        text-align: end;
+    }
+    &__firm {
+        padding: 0;
+        opacity: 0.6;
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 300;
+        color: #ffffff;
+        &-end {
+            padding: 0 15px;
+            text-align: end;
+        }
+        
     }
 }
