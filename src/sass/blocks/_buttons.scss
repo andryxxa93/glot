@@ -8,11 +8,11 @@
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
-    display: block;
-    margin: 0 auto;
     &_calc {
+        display: block;
         width: 230px;
         height: 57px;
+        margin: 0 auto;
         margin-top: 36px;
         font-size: 15px;
         font-weight: 500;
@@ -31,8 +31,5 @@
         transform: translateX(-50%);
         bottom: 63px;
         box-shadow: 0 0 0 16px #fff;
-    }
-    &_mn {
-        margin: 0;
     }
 }
