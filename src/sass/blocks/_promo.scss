@@ -32,15 +32,18 @@
         line-height: 1.2;
     }
     &__divider {
-        width: 809px;
+        width: 71%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         margin: 0 auto;
         margin-top: 38px;
         hr {
-            width: 390px;
+            height: 1px;
+            opacity: .5;
+            width: 48.2%;
             background-color: #fff;
+            margin: 0 auto;
         }
         .round {
             width: 10px;
@@ -53,13 +56,12 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: baseline;
     }
     &__items {
         max-width: 250px;
         display: flex;
         flex-direction: column;
-        align-content: space-around;
         align-items: center;
         margin-top: 27px;
     }
