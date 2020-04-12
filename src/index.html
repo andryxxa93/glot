@@ -19,23 +19,26 @@
                 <nav>
                     <ul class="header__menu">
                         <li class="header__item">
-                            <a href="#" class="header__item-links">Преимущества</a>
+                            <a href="#advantages" class="header__item-links">Преимущества</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__item-links">Наша работа</a>
+                            <a href="#work" class="header__item-links">Наша работа</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__item-links">Цены</a>
+                            <a href="#prices" class="header__item-links">Цены</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__item-links">Схема работы</a>
+                            <a href="#scheme" class="header__item-links">Схема работы</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__item-links">Отзывы</a>
+                            <a href="#feed" class="header__item-links">Отзывы</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__item-links">Контакты</a>
+                            <a href="#map" class="header__item-links">Контакты</a>
                         </li>
+                        <button class="button button_hidden">
+                            Перезвоните мне
+                        </button>
                     </ul>
                 </nav>
                 <div class="contacts">
@@ -45,11 +48,12 @@
                     </div>
                     <a href="tel:+79264230100" class="contacts__number">+7 (926) 423 01 00</a>
                 </div>
-                <button class="button">
+                <button class="button button_ask">
                     Перезвоните мне
                 </button>
             </header>
             <h2 class="promo__global">
+                <img src="icons/logo.png" alt="logo">
                 Global Opt - логистика полного цикла из Китая в Россию
             </h2>
             <h1 class="promo__header">
@@ -85,8 +89,13 @@
                 Получить расчет
             </button>
         </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </section>
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <div class="container">
             <h2 class="title">
                 Преимущества работы с GlobalOpt
@@ -167,7 +176,7 @@
             </div>
         </div>
     </section>
-    <section class="work">
+    <section class="work" id="work">
         <div class="container p-0">
             <div class="title">
                 Наша работа - больше чем просто доставка
@@ -192,7 +201,7 @@
                     <div class="work__dscr">
                         <div class="title title__work">Логистика последней мили</div>
                         <div class="text text__center">
-                            Мы осуществляем доставку вашего груза до конкретного адреса. Привоз согласовывается менед- жерами по телефону, предварительно за сутки и за час до доставки. Также мы предоставляем услуги грузчи- ков по месту доставки груза.
+                            Мы осуществляем доставку вашего груза до конкретного адреса. Привоз согласовывается менеджерами по телефону, предварительно за сутки и за час до доставки. Также мы предоставляем услуги грузчиков по месту доставки груза.
                         </div>
                     </div>
                 </div>
@@ -223,8 +232,8 @@
             </div>
         </div>
     </section>
-    <section class="prices">
-        <div class="container">
+    <section class="prices" id="prices">
+        <div class="container p-0">
             <div class="title">
                 Цены на любой вариант доставки
             </div>
@@ -325,7 +334,7 @@
             </div>
         </div>
     </section>
-    <section class="scheme">
+    <section class="scheme" id="scheme">
         <div class="container p-0">
             <div class="title">
                 Схема работы с нами
@@ -351,8 +360,23 @@
                     <div class="title__orange">Доставка на наш склад</div>
                     <div class="scheme__dscr">Связываемся с Вашим поставщиком в Китае и договариваемся о доставке груза на наш склад</div>
                 </div>
+                <div class="scheme__items">
+                    <img src="icons/sheme/icon_5.png" alt="icon" class="scheme__icon">
+                    <div class="title__orange">Проверка груза</div>
+                    <div class="scheme__dscr">Мы проверяем, собираем и упаковываем перед отправкой Ваш груз на своём складе</div>
+                </div>
+                <div class="scheme__items">
+                    <img src="icons/sheme/icon_6.png" alt="icon" class="scheme__icon">
+                    <div class="title__orange">Доставка груза</div>
+                    <div class="scheme__dscr">Мы перевозим ваш груз до места назначения и производим таможенную очистку</div>
+                </div>
+                <div class="scheme__items">
+                    <img src="icons/sheme/icon_7.png" alt="icon" class="scheme__icon">
+                    <div class="title__orange">Оплата</div>
+                    <div class="scheme__dscr">Оплачиваете доставку груза при получении</div>
+                </div>
             </div>
-            <div class="scheme__bottom">
+            <!-- <div class="scheme__bottom">
                 <div class="scheme__bottom-items">
                     <img src="icons/sheme/icon_5.png" alt="icon" class="scheme__icon">
                     <div class="title__orange">Проверка груза</div>
@@ -368,10 +392,10 @@
                     <div class="title__orange">Оплата</div>
                     <div class="scheme__dscr">Оплачиваете доставку груза при получении</div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
-    <section class="feed">
+    <section class="feed" id="feed">
         <div class="container">
             <div class="title">
                 отзывы наших клиентов
@@ -426,7 +450,7 @@
     </section>
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaea8f9e24c19c2fc232c49cde88bb47881829be275a995e9f615e7ce7489ca6f&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false">
     </script>
-    <footer class="footer">
+    <footer class="footer" id="map">
         <div class="container p-0">
             <div class="wrapper">
                 <div class="wrapper_up">
@@ -469,9 +493,10 @@
                 </div>
             </div>
             
-        </div>
-       
+        </div>   
     </footer>
+    <div class="overlay">
+    </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>

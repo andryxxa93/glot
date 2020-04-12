@@ -10,6 +10,9 @@
         text-align: center;
         margin: 0 auto;
         margin-top: 9px;
+        img {
+            display: none;
+        }
     }
     &__header {
         font-size: 72px;
@@ -72,5 +75,9 @@
         line-height: 22px;
         text-align: center;
         margin-top: 13px;
+    }
+    .hamburger {
+        display: none;
+        z-index: 4;
     }
 }

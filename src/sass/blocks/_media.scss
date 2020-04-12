@@ -40,14 +40,6 @@
 			width: 300px;
 		}
 	}
-	.agent {
-		.title {
-			font-size: 24px;
-		}
-		.subtitle {
-			font-size: 18px;
-		}
-	}
 	.footer {
 		padding: 20px 0;
 		height: auto;
@@ -69,7 +61,12 @@
    			line-height: 17px;
 		}
 	}
-
+	.title {
+		font-size: 24px;
+	}
+	.subtitle {
+		font-size: 18px;
+	}
 }
 
 @media (max-width: 991px) {
@@ -84,11 +81,15 @@
 			font-size: 19px;
 		}
 		&__dscr {
-			font-size: 12px;
+			font-size: 14px;
 			text-align: center;
 		}
 		&__items {
-			max-width: 172px;
+			max-width: 250px;
+		}
+		&__wrapper {
+			flex-wrap: wrap;
+			justify-content: space-around;
 		}
 		.button {
 			width: 170px;
@@ -116,6 +117,362 @@
 				font-size: 10px;
 			}
 		}
+	}
+	.work {
+		&__block {
+			width: 230px;
+		}
+	}
+	.agent {
+		&__round {
+			width: 98px;
+    		height: 98px;
+		}
+	}
+
+	.prices {
+		&__wrapper {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&__item {
+			&-head {
+				font-size: 14px;
+			}
+			&-delivery {
+				font-size: 13px;
+				span {
+					font-size: 21px;
+				}
+			}
+			&-dscr {
+				font-size: 13px;
+			}
+			&:nth-last-child(-n + 2) {
+				margin-top: 20px;
+			}
+		}
+	}
+
+	.title {
+		font-size: 23px;
+		&__work {
+			font-size: 14px;
+		}
+	}
+	.subtitle {
+		font-size: 17px;
+	}
+	.button_small {
+		top: 235px;
+		width: 144px;
+		height: 37px;
+	}
+	.button_border {
+		width: 144px;
+		height: 37px;
+		font-size: 11px;
+	}
+	.forms {
+		input {
+			width: 200px;
+    		font-size: 13px;
+		}
+		
+	}
+	.consultation {
+		&__frame {
+			min-height: 166px;
+		}
+		&__round {
+			width: 96px;
+    		height: 95px;
+		}
+	}
+	.manager {
+		&__round {
+			width: 98px;
+    		height: 98px;
+		}
+	}
+	.questions {
+		&__item {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.promo {
+		&__header {
+			font-size: 43px;
+		}
+		&__subheader {
+			font-size: 26px;
+		}
+		&__logo {
+			display: block;
+		}
+		&__global {
+			display: flex;
+			flex-direction: row;
+			font-size: 17px;
+			align-items: center;
+			justify-content: center;
+			img {
+				display: block;
+				width: 50px;
+				margin-right: 10px;
+			}
+		}
+		&__wrapper {
+			width: 80%;
+			flex-wrap: wrap;
+			margin: 0 auto;
+		}
+		&__items {
+			max-width: 183px;
+		}
+		.hamburger {
+			display: block;
+			position: fixed;
+			right: 20px;
+			top: 20px;
+			transform: translateY(-50%);
+			width: 30px;
+			span {
+				display: block;
+				height: 2px;
+				width: 100%;
+				background-color: $main-color;
+				margin-bottom: 3px;
+				transition: .5s all;
+			}
+			&_active {
+				span {
+					margin-bottom: -2px;
+					&:first-child {
+						transform: translateY(3px) rotate(-45deg);
+					}
+					&:nth-child(2) {
+						display: none;
+					}
+					&:last-child {
+						transform: translateY(3px) rotate(45deg);
+					}
+				}
+			}
+		}
+	}
+	.header {
+		&__menu {
+			position: fixed;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			top: 0;
+			left: -100%;
+			width: 50%;
+			height: 100%;
+			padding: 20px 15px;
+			background-color:rgba($color: #f3f3f3, $alpha: .9);
+			transition: 0.6s all;
+			z-index: 4;
+		}
+		&_active {
+			left: 0;
+		}
+		&__item {
+			width: 100%;
+			text-align: center;
+			border: none;
+			margin-bottom: 10px;
+			&-links {
+				display: block;
+				font-size: 18px;
+				color: black;
+				&:hover {
+					color: black;
+					text-decoration: none;
+				}
+			}
+		}
+		.button {
+			&_ask {
+				display: none;
+			}
+		}
+		&__logo {
+			display: none;
+		}
+	}
+	.work {
+		&__wrapper {
+			flex-wrap: wrap;
+		}
+		&__block {
+			margin: 0 auto;
+			margin-top: 20px;
+		}
+	}
+	.agent {
+		&__round {
+			width: 81px;
+			height: 81px;
+		}
+	}
+	.consultation {
+		&__frame {
+			padding: 0 33px 40px 33px;
+			width: 77%;
+			height: auto;
+		}
+	}
+	.feed {
+		&__slider {
+			width: 100%;
+		}
+	}
+	.questions {
+		&__item {
+			width: 80%;
+		}
+	}
+	.forms {
+		flex-direction: column;
+		input {
+			width: 280px;
+		}
+		&_question {
+			input {
+				width: 80%;
+				&:nth-child(n + 1) {
+					margin-top: 10px;
+				}
+				&:nth-child(4) {
+					width: 80%;
+				}
+			}
+		}
+	}
+	.footer {
+		&__slogan {
+			font-size: 12px;
+		}
+		&__number {
+			font-size: 12px;
+		}
+		.button {
+			width: 120px;
+			font-size: 11px;
+		}
+		&__logo {
+			width: 50px;
+		}
+		&__firm {
+			font-size: 12px;
+		}
+		&__policy {
+			font-size: 12px;
+		}
+	}
+}
+@media (max-width: 575px) {
+	.button {
+		&_calc {
+			height: 20px;
+		}
+	}
+	.promo {
+		&__divider {
+			.round {
+				width: 7px;
+				height: 7px;
+			}
+		}
+		&__header {
+			font-size: 39px;
+		}
+		&__subheader {
+			font-size: 22px;
+		}
+		&__global {
+			font-size: 15px;
+			img {
+				width: 45px;
+				margin-right: 5px;
+			}
+		}
+		&__items {
+			max-width: 201px;
+		}
+		&__dscr {
+			font-size: 13px;
+		}
+		.button {
+			width: 158px;
+			height: 42px;
+			font-size: 12px;
+		}
+	}
+	.scheme {
+		&__items {
+			width: 230px;
+		}
+		&__dscr {
+			font-size: 13px;
+		}
+	}
+	.feed {
+		&__slider {
+			div {
+				img {
+					width: 106px;
+    				height: 106px;
+				}
+			}
+		}
+		.slick-next, .slick-prev {
+			img {
+                width: 12px;
+                height: 42px;
+            }
+		} 
+	}
+	.questions {
+		.item__head-title {
+			font-size: 17px;
+		}
+		.item__head-sub {
+			font-size: 13px;
+		}
+	}
+	.button {
+		width: 158px;
+		height: 42px;
+		font-size: 12px;
+		&_small {
+			width: 130px;
+    		height: 36px;
+		}
+		&_border {
+			width: 141px;
+		}
+	}
+	.text {
+		font-size: 13px;
+	}
+	.title {
+		font-size: 21px;
+		&__work {
+			font-size: 13px;
+		}
+		&__orange {
+			font-size: 15px;
+		}
+	}
+	.subtitle {
+		font-size: 16px;
 	}
 
 }

@@ -3,20 +3,19 @@
     min-height: 454px;
     background-color: #f3f3f3;
     &__wrapper {
-        margin-top: 29px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
     }
     &__items {
-        width: 256px;
+        margin: 33px 10px 0 10px;
+        width: 259px;
         min-height: 114px;
         display: flex;
         flex-direction: column;
-        align-content: space-around;
         align-items: center;
-        &:last-child {
+        &:nth-last-child(-n + 3) {
             margin-top: 19px;
         }
     }
@@ -34,6 +33,7 @@
         padding: 26px 115px 0 110px;
         display: flex;
         justify-content: space-around;
+        align-items: baseline;
         &-items {
             display: flex;
             flex-direction: column;
