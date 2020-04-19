@@ -8,6 +8,8 @@
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
     &_calc {
         display: block;
         width: 230px;

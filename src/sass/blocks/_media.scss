@@ -323,7 +323,7 @@
 	}
 	.consultation {
 		&__frame {
-			padding: 0 33px 40px 33px;
+			padding: 0 0 40px 0;
 			width: 77%;
 			height: auto;
 		}
@@ -339,9 +339,11 @@
 		}
 	}
 	.forms {
+		width: 100%;
 		flex-direction: column;
 		input {
-			width: 280px;
+			width: 70%;
+			margin: 3px auto;
 		}
 		&_question {
 			input {
@@ -475,4 +477,64 @@
 		font-size: 16px;
 	}
 
+}
+@media(max-width: 426px) {
+	.promo {
+		&__header {
+			font-size: 33px;
+		}
+		&__subheader {
+			font-size: 20px;
+		}
+	}
+	.work {
+		&__block {
+			width: 260px;
+		}
+	}
+	.consultation {
+		&__frame {
+			.forms {
+				input {
+					width: 80%;
+				}
+			}
+		}
+		&__round {
+			width: 90px;
+			height: 90px;
+		}
+	}
+	.feed {
+		.slick-next, .slick-prev {
+			img {
+                display: none;
+            }
+		} 
+	}
+	.questions {
+		&__item {
+			&-block {
+				padding: 18px 0 18px 0;
+			}
+		}
+	}
+	.footer {
+		&__slogan {
+			display: none;
+		}
+		.wrapper_up-left {
+			width: auto;
+		}
+		.wrapper_up-right {
+			width: auto;
+		}
+		.button {
+			font-size: 10px;
+			width: 110px;
+		}
+	}
+	.title {
+		font-size: 20px;
+	}
 }

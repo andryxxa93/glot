@@ -7,12 +7,29 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/stylemin.css">
 </head>
 <body>
-    <section class="promo">
-        <div class="container p-0">
-            <header class="header">
+    <div class="modal">
+        <div class="close">
+            ×
+        </div>
+        <div class="title">Заполните форму
+        </div>
+        <div class="subtitle">
+            и мы свяжемся с вами
+        </div>
+            <form action="#" class="forms">
+                <input name="name" placeholder="Ваше имя..." type="text">
+                <input name="phone" placeholder="Ваш номер телефона...">
+            </form>
+            <button class="button">отправить</button>
+    </div>
+    <div class="overlay"></div>
+    <header class="header animated">
+        <div class="container">
+            <div class="header__row">
                 <a href="#" class="header__logo">
                     <img src="icons/logo.png" alt="logo">
                 </a>
@@ -36,7 +53,7 @@
                         <li class="header__item">
                             <a href="#map" class="header__item-links">Контакты</a>
                         </li>
-                        <button class="button button_hidden">
+                        <button class="button button_hidden button_call">
                             Перезвоните мне
                         </button>
                     </ul>
@@ -48,10 +65,14 @@
                     </div>
                     <a href="tel:+79264230100" class="contacts__number">+7 (926) 423 01 00</a>
                 </div>
-                <button class="button button_ask">
+                <button class="button button_call">
                     Перезвоните мне
                 </button>
-            </header>
+            </div>
+        </div>
+    </header>
+    <section class="promo" id="up">
+        <div class="container p-0">
             <h2 class="promo__global">
                 <img src="icons/logo.png" alt="logo">
                 Global Opt - логистика полного цикла из Китая в Россию
@@ -467,7 +488,7 @@
                             </div>
                             <a href="tel:+79264230100" class="footer__number">+7 (926) 423 01 00</a>
                         </div>
-                        <button class="button">
+                        <button class="button button_call">
                             Перезвоните мне
                         </button>
                     </div>
@@ -495,11 +516,16 @@
             
         </div>   
     </footer>
-    <div class="overlay">
-    </div>
+    <a href="#up" class="pageUp">
+        <img src="icons/pageup.svg" alt="">
+    </a>
+    <a href="#up" class="pageUp clone">
+        <img src="icons/pageup.svg" alt="">
+    </a>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

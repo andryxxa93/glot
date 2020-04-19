@@ -1,0 +1,16 @@
+.pageUp {
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 45px;
+    z-index: 4;
+    img {
+        width: 40%;
+    }
+}
+.clone {
+    transform: translateY(2px);
+    img {
+        filter: blur(2px);
+    }
+}
