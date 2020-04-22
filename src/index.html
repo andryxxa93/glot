@@ -20,7 +20,7 @@
         <div class="subtitle">
             и мы свяжемся с вами
         </div>
-            <form action="#" class="forms">
+            <form action="#" class="forms modal__forms">
                 <input name="name" placeholder="Ваше имя..." type="text">
                 <input name="phone" placeholder="Ваш номер телефона...">
             </form>
@@ -28,7 +28,7 @@
     </div>
     <div class="overlay"></div>
     <header class="header animated">
-        <div class="container">
+        <div class="container p-0">
             <div class="header__row">
                 <a href="#" class="header__logo">
                     <img src="icons/logo.png" alt="logo">
@@ -51,11 +51,14 @@
                             <a href="#feed" class="header__item-links">Отзывы</a>
                         </li>
                         <li class="header__item">
-                            <a href="#map" class="header__item-links">Контакты</a>
+                            <a href="#map" class="header__item-links hidden">Контакты</a>
                         </li>
                         <button class="button button_hidden button_call">
                             Перезвоните мне
                         </button>
+                        <a href="" class="header__icon vissiable">
+                            <img src="icons/phone-call.svg" alt="phone" class="main">
+                        </a>
                     </ul>
                 </nav>
                 <div class="contacts">
@@ -65,6 +68,9 @@
                     </div>
                     <a href="tel:+79264230100" class="contacts__number">+7 (926) 423 01 00</a>
                 </div>
+                <a href="" class="header__icon">
+                    <img src="icons/phone-call.svg" alt="phone" class="main">
+                </a>
                 <button class="button button_call">
                     Перезвоните мне
                 </button>

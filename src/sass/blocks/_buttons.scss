@@ -9,8 +9,9 @@
     font-weight: 400;
     text-transform: uppercase;
     position: relative;
-    overflow: hidden;
     &_calc {
+        position: relative;
+        overflow: hidden;
         display: block;
         width: 230px;
         height: 57px;
@@ -18,6 +19,30 @@
         margin-top: 36px;
         font-size: 15px;
         font-weight: 500;
+        &::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            bottom: -50%;
+            left: -50%;
+            background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
+            transform: rotateZ(55deg) translate(-10em, 12.5em);
+            animation: sheen 9s linear infinite reverse;
+        }
+        @keyframes sheen {
+
+            0% {
+            transform: rotateZ(55deg) translate(1em, -12.5em);
+            }
+            5% {
+            transform: rotateZ(55deg) translate(-10em, 12.5em);
+            }
+            100% {
+            transform: rotateZ(55deg) translate(-10em, 12.5em);
+            }
+        }
+
     }
     &_m0 {
         display: block;

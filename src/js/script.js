@@ -14,19 +14,23 @@ $(document).ready(function(){
         menu = nav.querySelector('.header__menu'),
         headerButton = menu.querySelector('.button'),
         header = document.querySelector('.header'),
-        headerLogo = header.querySelector('.header__logo'),
-        allButtons = document.querySelectorAll('.button'),
+        headerLogo = $('.header__logo img'),
+        allButtons = document.querySelectorAll('.button, .close, .overlay'),
         modal = document.querySelector('.modal'),
         modalClose = modal.querySelector('.close'),
         menuItems = menu.querySelectorAll('.header__item');
 
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 480) {
-            $('.header__logo img').css('width', '70px');
-            $('.header').toggleClass('header header__fixed slideInDown faster');
-        } else {
-            $('.header__logo img').css('width', 'auto');
-            $('.header__fixed').toggleClass('header header__fixed slideInDown faster');
+        if(window.screen.width > 767) {
+            if ($(this).scrollTop() > 480) {
+                $('.header__row').toggleClass('header__row header__row-fixed');
+                $('.header__logo img').css('width', '70px');
+                $('.header').toggleClass('header header__fixed slideInDown faster');
+            } else {
+                $('.header__row-fixed').toggleClass('header__row header__row-fixed');
+                $('.header__logo img').removeAttr("style");
+                $('.header__fixed').toggleClass('header header__fixed slideInDown faster');
+            }
         }
     });
 
@@ -58,12 +62,25 @@ $(document).ready(function(){
         return false;
     });
 
-    $('.call').click(() => {
+    // allButtons.forEach(function(item) {
+    //     item.addEventListener('click', (event) => {
+    //         if(event.target.className == 'button button_call') {
+    //             $('.overlay').fadeIn();
+    //             $('.modal').slideDown(); 
+    //         }
+    //         if(event.target.className == 'close' || 'overlay') {
+    //             $('.modal').slideUp();
+    //             $('.overlay').fadeOut();
+    //         }
+    //     });
+    // });
+
+    $('.button_call').click(() => {
         $('.overlay').fadeIn();
         $('.modal').slideDown();
     });
 
-    $('.close').click(() => {
+    $('.close, .overlay').click(() => {
         $('.modal').slideUp();
         $('.overlay').fadeOut();
     });

@@ -18,21 +18,47 @@
 		}
 	}
 	.header {
+		left: 50%;
+		&__row {
+			width: 991px;
+			justify-content: center;
+			&-fixed {
+				width: 957px;
+				.button {
+					width: 140px;
+					height: 40px;
+					font-size: 11px;
+				}
+				.contacts {
+					margin-right: 10px;
+					&__number {
+						font-size: 15px;
+						line-height: 19px;
+					}
+				}
+			}
+			.contacts {
+				margin-right: 10px;
+				&__number {
+					font-size: 15px;
+					line-height: 19px;
+				}
+			}
+			.button {
+				width: 140px;
+				height: 40px;
+				font-size: 11px;
+			}
+		}
+		&__logo {
+			img {
+				width: 80px;
+			}
+		}
 		&__item {
 			&-links {
 				font-size: 12px;
 			}
-		}
-		.contacts {
-			&__number {
-				font-size: 15px;
-				line-height: 19px;
-			}
-		}
-		.button {
-			width: 140px;
-			height: 40px;
-			font-size: 11px;
 		}
 	}
 	.work {
@@ -70,6 +96,56 @@
 }
 
 @media (max-width: 991px) {
+	.header {
+		&__row {
+			width: 765px;
+			justify-content: center;
+			&-fixed {
+				width: 739px;
+				justify-content: center;
+				.button {
+					display: none;
+				}
+				.contacts {
+					margin-left: 24px;
+					margin-right: 5px;
+					&__ask {
+						font-size: 13px;
+					}
+					&__number {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+		&__menu {
+			margin-right: auto;
+		}
+		&__item {
+			padding: 0px 7px;
+		}
+		&__logo {
+			img {
+				width: 70px;
+			}
+		}
+		.contacts {
+			margin-left: 24px;
+			margin-right: 5px;
+			&__ask {
+				font-size: 13px;
+			}
+			&__number {
+				font-size: 14px;
+			}
+		}
+		.button {
+			display: none;
+		}
+		&__icon {
+			display: block;
+		}
+	}
 	.promo {
 		&__header {
 			font-size: 53px;
@@ -89,35 +165,15 @@
 		}
 		&__wrapper {
 			flex-wrap: wrap;
-			justify-content: space-around;
+			justify-content: space-evenly;
 		}
 		.button {
 			width: 170px;
 			height: 46px;
 			font-size: 13px;
 		}
-		.header {
-			&__menu {
-				margin-right: auto;
-			}
-			&__item {
-				padding: 0px 7px;
-			}
-			&__logo {
-				img {
-					width: 70px;
-				}
-			}
-			.contacts {
-				display: none;
-			}
-			.button {
-				width: 125px;
-				height: 41px;
-				font-size: 10px;
-			}
-		}
 	}
+
 	.work {
 		&__block {
 			width: 230px;
@@ -200,10 +256,77 @@
 			width: 100%;
 		}
 	}
+	.footer {
+		.button {
+			width: 125px;
+			height: 41px;
+			font-size: 10px;
+		}
+	}
 }
 
 @media (max-width: 767px) {
+	.header {
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: none;
+		&__menu {
+			position: fixed;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			top: 0;
+			left: -100%;
+			width: 50%;
+			height: 100%;
+			padding: 20px 15px;
+			background-color:rgba($color: #f3f3f3, $alpha: .9);
+			transition: 0.6s all;
+			z-index: 4;
+			.vissiable {
+				display: block;
+			}
+			ul {
+				
+				li {
+					.hidden {
+						display: none;
+					}
+				}
+			}
+			
+		}
+		&_active {
+			left: 0;
+		}
+		&__item {
+			width: 100%;
+			text-align: center;
+			border: none;
+			margin-bottom: 10px;
+			&-links {
+				display: block;
+				font-size: 18px;
+				color: black;
+				&:hover {
+					color: black;
+					text-decoration: none;
+				}
+			}
+		}
+		&__logo {
+			display: none;
+		}
+		.contacts {
+			display: none;
+		}
+		&__icon {
+			display: none;
+		}
+	}
 	.promo {
+		padding: 20px 0 82px 0;
 		&__header {
 			font-size: 43px;
 		}
@@ -262,48 +385,6 @@
 					}
 				}
 			}
-		}
-	}
-	.header {
-		&__menu {
-			position: fixed;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			top: 0;
-			left: -100%;
-			width: 50%;
-			height: 100%;
-			padding: 20px 15px;
-			background-color:rgba($color: #f3f3f3, $alpha: .9);
-			transition: 0.6s all;
-			z-index: 4;
-		}
-		&_active {
-			left: 0;
-		}
-		&__item {
-			width: 100%;
-			text-align: center;
-			border: none;
-			margin-bottom: 10px;
-			&-links {
-				display: block;
-				font-size: 18px;
-				color: black;
-				&:hover {
-					color: black;
-					text-decoration: none;
-				}
-			}
-		}
-		.button {
-			&_ask {
-				display: none;
-			}
-		}
-		&__logo {
-			display: none;
 		}
 	}
 	.work {
@@ -378,6 +459,15 @@
 			font-size: 12px;
 		}
 	}
+	.pageUp {
+		right: -57px;
+		bottom: 14px;
+	}
+	.modal__forms {
+		input {
+			width: 100%;
+		}
+	}
 }
 @media (max-width: 575px) {
 	.button {
@@ -399,7 +489,7 @@
 			font-size: 22px;
 		}
 		&__global {
-			font-size: 15px;
+			font-size: 14px;
 			img {
 				width: 45px;
 				margin-right: 5px;

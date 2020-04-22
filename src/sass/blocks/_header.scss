@@ -3,24 +3,28 @@
     top: 24px;
     left: 50%;
     transform: translateX(-50%);
-    transition: all .5s;
+    z-index: 5;
     &__row {
+    position: relative;
     width: 1140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+        &-fixed {
+            width: 1140px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
     &__fixed {
+        width: 100%;
         padding: 5px 0;
         position: fixed;
         background-color: rgba($color: #000000, $alpha: .9);
         box-shadow: 0 4px 10px 0 rgba($color: #000000, $alpha: .7);
         top: 0;
-        left: 0;
-        right: 0;
         display: flex;
-        justify-content: center;
-        align-items: center;
         z-index: 4;
     }
     &__menu {
@@ -52,6 +56,12 @@
         img {
             width: 70px;
             height: 70px;
+        }
+    }
+    &__icon {
+        display: none;
+        img {
+            width: 60px;
         }
     }
 }
