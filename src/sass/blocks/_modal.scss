@@ -11,7 +11,6 @@
     height: auto;
     z-index: 5;
     border: 1px solid #898989;
-    border-color: rgba($color: #898989, $alpha: .5);
     border-radius: 30px;
     background-color: rgba($color: #fff, $alpha: .7);
     .button {
@@ -24,14 +23,53 @@
         flex-direction: column;
         margin-top: 33px;
     }
-    .close {
-        display: block;
-        position: absolute;
-        font-size: 30px;
-        right: 15px;
-        top: 8px;
-        cursor: pointer;
-        z-index: 10;
+    &_calc {
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        left: 50%;
+        top: 150px;
+        transform: translateX(-50%);
+        padding: 40px 40px 20px 40px;
+        width: auto;
+        height: auto;
+        z-index: 5;
+        border: 1px solid #898989;
+        border-radius: 30px;
+        background-color: rgba($color: #fff, $alpha: .7);
+        .forms {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            align-items: center;
+            font-weight: 500;
+            input {
+                width: 100px;
+                border-radius: 20px;
+            }
+        }
+        &-price {
+            text-align: center;
+            font-weight: 500;
+            span {
+                color:  #B22222;
+            }
+        }
+        select {
+            width: auto;
+            text-align: center;
+            padding: 0 28px;
+            height: 45px;
+            background-color: #ffffff;
+            border: 1.0px solid rgba(0,0,0,0.21);
+            border-radius: 30px;
+            margin: 3px;
+            option {
+                border-radius: 30px;
+                font-weight: 500;
+            }
+        }
     }
 }
 .flex {

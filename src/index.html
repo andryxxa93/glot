@@ -23,8 +23,33 @@
             <form action="#" class="forms modal__forms">
                 <input name="name" placeholder="Ваше имя..." type="text">
                 <input name="phone" placeholder="Ваш номер телефона...">
+                <button type="submit" class="button">отправить</button>
             </form>
-            <button class="button">отправить</button>
+    </div>
+    <div class="modal_calc">
+        <div class="close">
+            ×
+        </div>
+        <select name="calc" id="calc">
+            <option required>Способ доставки</option>
+            <option value="0.3">МОРЕМ 35-50 ДНЕЙ от 0,3$ за 1 кг</option>
+            <option value="1">Ж/Д 15-28 ДНЕЙ от 1$ за 1 кг</option>
+            <option value="1">АВТО 12-20 ДНЯ от 1$ за 1 кг</option>
+            <option value="6">АВИА 1-12 ДНЕЙ от 6$ за 1 кг</option>
+            <option value="25">ЭКСПРЕСС 1-2 дня из Гуанчжоу в Москву от 25$/кг</option>
+        </select>
+        <form class="forms">
+            <div class="modal_calc-weight">
+                Примерный вес посылки
+            </div>
+            <input type="text" class="modal_calc-input">
+            <div class="modal-calc_kg">кг</div>
+        </form>
+        <div class="modal_calc-price">
+            Примерная стоимость доставки 
+            <p><span id="total">204$</span></p>
+        </div>
+        <button class="button" type="submit">Оставить заявку</button>
     </div>
     <div class="overlay"></div>
     <header class="header animated">
@@ -56,9 +81,14 @@
                         <button class="button button_hidden button_call">
                             Перезвоните мне
                         </button>
-                        <a href="" class="header__icon vissiable">
-                            <img src="icons/phone-call.svg" alt="phone" class="main">
-                        </a>
+                        <div class="header__icons">
+                            <a href="#" class="header__icon vissiable">
+                                <img src="icons/phone-call.png" alt="phone" class="main">
+                            </a>
+                            <a href="#map" class="header__icon vissiable">
+                                <img src="icons/map.png" alt="phone" class="main">
+                            </a>
+                        </div>
                     </ul>
                 </nav>
                 <div class="contacts">
@@ -71,7 +101,7 @@
                 <a href="" class="header__icon">
                     <img src="icons/phone-call.svg" alt="phone" class="main">
                 </a>
-                <button class="button button_call">
+                <button type="submit" class="button button_call">
                     Перезвоните мне
                 </button>
             </div>
@@ -338,11 +368,12 @@
                     <input name="name" placeholder="Ваше имя..." type="text">
                     <input name="phone" placeholder="Ваш номер телефона...">
                     <input name="email" placeholder="Ваш e-mail..." type="email">
+                    <button type="submit" class="button button_border">
+                        Отправить заявку
+                    </button>
                 </form>
             </div>
-            <button class="button button_border">
-                Отправить заявку
-            </button>
+            
         </div>
     </section>
     <section class="manager">
@@ -469,8 +500,8 @@
                         <input name="phone" placeholder="Ваш номер телефона...">
                         <input name="email" placeholder="Ваш e-mail..." type="email">
                         <input name="text" placeholder="Сообщение..." type="text">
+                        <button type="submit" class="button button_m0">Отправить заявку</button>
                     </form>
-                    <button class="button button_m0">Отправить заявку</button>
                 </div>
             </div>
         </div>
@@ -531,7 +562,6 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -9,15 +9,9 @@ $(document).ready(function(){
       });
 
     const hamburger = document.querySelector('.hamburger'),
-        overlay = document.querySelector('.overlay'),
         nav = document.querySelector('nav'),
         menu = nav.querySelector('.header__menu'),
         headerButton = menu.querySelector('.button'),
-        header = document.querySelector('.header'),
-        headerLogo = $('.header__logo img'),
-        allButtons = document.querySelectorAll('.button, .close, .overlay'),
-        modal = document.querySelector('.modal'),
-        modalClose = modal.querySelector('.close'),
         menuItems = menu.querySelectorAll('.header__item');
 
     $(window).scroll(function() {
@@ -74,7 +68,7 @@ $(document).ready(function(){
     //         }
     //     });
     // });
-
+    // Modal
     $('.button_call').click(() => {
         $('.overlay').fadeIn();
         $('.modal').slideDown();
@@ -84,5 +78,45 @@ $(document).ready(function(){
         $('.modal').slideUp();
         $('.overlay').fadeOut();
     });
+    // Calc Modal
+    $('.button_calc').click(() => {
+        $('.overlay').fadeIn();
+        $('.modal_calc').css('display', 'flex').hide().slideDown();
+    });
+    $('.close, .overlay').click(() => {
+        $('.modal_calc').slideUp();
+        $('.overlay').fadeOut();
+    });
+
+    function calc() {
+            let weight,
+            total,
+            value,
+            totalSum = $('#total');
+
+        totalSum.text('0');
+
+        $('#calc').on('change', function() {
+        value = this.options[this.selectedIndex].value;
+        total = weight * value;
+            if (isNaN(total)) {
+                totalSum.text('Заполните все формы');
+            } else {
+                totalSum.text(total.toFixed(1) + '$');
+            }
+        });
+
+        $('.modal_calc-input').on('input', function() {
+            weight = this.value;
+            total = weight * value;
+            if (isNaN(total)) {
+                totalSum.text('Заполните все формы');
+            } else {
+                totalSum.text(total.toFixed(1) + '$');
+            }
+        });
+    }
+
+    calc();
 
   });

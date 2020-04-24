@@ -287,12 +287,9 @@
 			.vissiable {
 				display: block;
 			}
-			ul {
-				
-				li {
-					.hidden {
-						display: none;
-					}
+			li {
+				.hidden {
+					display: none;
 				}
 			}
 			
@@ -323,6 +320,9 @@
 		}
 		&__icon {
 			display: none;
+		}
+		&__icons {
+			display: flex;
 		}
 	}
 	.promo {

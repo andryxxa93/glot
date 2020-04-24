@@ -58,6 +58,17 @@
             height: 70px;
         }
     }
+    &__icons {
+        width: 30%;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            img {
+                width: 40px;
+            }
+        }
+    }
     &__icon {
         display: none;
         img {
