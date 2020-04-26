@@ -94,28 +94,33 @@ $(document).ready(function(){
             value,
             totalSum = $('#total');
 
-        totalSum.text('0');
-
-        $('#calc').on('change', function() {
-        value = this.options[this.selectedIndex].value;
-        total = weight * value;
-            if (isNaN(total)) {
-                totalSum.text('Заполните все формы');
-            } else {
-                totalSum.text(total.toFixed(1) + '$');
-            }
-        });
+        totalSum.text('Укажите способ доставки и вес посылки');
 
         $('.modal_calc-input').on('input', function() {
             weight = this.value;
             total = weight * value;
-            if (isNaN(total)) {
-                totalSum.text('Заполните все формы');
-            } else {
-                totalSum.text(total.toFixed(1) + '$');
-            }
-        });
-    }
+                if(!weight) {
+                    totalSum.text('Укажите вес');
+                } else if(value == 'Способ доставки') {
+                    totalSum.text('Укажите способ доставки');
+                } else {
+                    totalSum.text(total.toFixed(1) + '$');
+                }
+            });
+            $('#calc').on('change', function() {
+                value = this.options[this.selectedIndex].value;
+                total = weight * value;
+                if(!weight) {
+                    totalSum.text('Укажите вес');
+                } else if(value == 'Способ доставки') {
+                    totalSum.text('Укажите способ доставки');
+                } else {
+                    totalSum.text(total.toFixed(1) + '$');
+                }
+            });  
+        }   
+
+
 
     calc();
 
